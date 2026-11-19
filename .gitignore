@@ -1,0 +1,12 @@
+node_modules/
+.expo/
+dist/
+web-build/
+*.log
+.env
+.DS_Store
+apps/desktop/out/
+apps/desktop/web/
+apps/desktop/dist/
+supabase/functions/generate-screen/core/
+supabase/.temp/

@@ -1,0 +1,43 @@
+{
+  "name": "desktop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Leadership Tools desktop app (Electron shell around the Expo web build)",
+  "main": "main.cjs",
+  "scripts": {
+    "build:web": "npm run export:web -w client -- --output-dir ../desktop/web",
+    "start": "npm run build:web && electron .",
+    "dev": "MOONSHOT_URL=http://localhost:8081 electron .",
+    "dist:mac": "npm run build:web && electron-builder --mac",
+    "smoke": "npm run build:web && MOONSHOT_SMOKE=smoke.png electron ."
+  },
+  "devDependencies": {
+    "electron": "45.2.3",
+    "electron-builder": "26.0.12"
+  },
+  "build": {
+    "appId": "com.leadershiptools.moonshot",
+    "productName": "Leadership Tools",
+    "files": [
+      "main.cjs",
+      "preload.cjs",
+      "web/**/*"
+    ],
+    "mac": {
+      "category": "public.app-category.business",
+      "target": [
+        "dmg"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ]
+    }
+  }
+}

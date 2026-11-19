@@ -1,0 +1,1264 @@
+{
+  "name": "Moonshot Generative UI",
+  "version": "1.2",
+  "font_note": "Narrative/* (Newsreader) only for model-written prose; UI/* (Plus Jakarta Sans) for everything else.",
+  "tokens": {
+    "color": {
+      "bg/canvas": {
+        "light": "#F6F5FA",
+        "dark": "#0F0D24",
+        "use": "Page background"
+      },
+      "bg/surface": {
+        "light": "#FFFFFF",
+        "dark": "#1A1736",
+        "use": "Default container"
+      },
+      "bg/sunken": {
+        "light": "#EEEBF7",
+        "dark": "#14112D",
+        "use": "Inputs, tracks, quiet wells"
+      },
+      "bg/inverse": {
+        "light": "#1C1846",
+        "dark": "#F3F1FF",
+        "use": "Highest-emphasis container (one per screen)"
+      },
+      "fg/primary": {
+        "light": "#1C1846",
+        "dark": "#F3F1FF",
+        "use": "Headlines and body"
+      },
+      "fg/secondary": {
+        "light": "#55526F",
+        "dark": "#B9B5D6",
+        "use": "Supporting text"
+      },
+      "fg/tertiary": {
+        "light": "#6B6785",
+        "dark": "#8F8AB3",
+        "use": "Metadata, timestamps"
+      },
+      "fg/on-inverse": {
+        "light": "#FFFFFF",
+        "dark": "#1C1846",
+        "use": "Text on bg/inverse"
+      },
+      "fg/on-inverse-muted": {
+        "light": "#C9C4EE",
+        "dark": "#55526F",
+        "use": "Secondary text on bg/inverse"
+      },
+      "line/default": {
+        "light": "#E6E3F0",
+        "dark": "#2E2A52",
+        "use": "Hairlines, card borders"
+      },
+      "line/strong": {
+        "light": "#CFCBE2",
+        "dark": "#433E6E",
+        "use": "Input borders, dividers that must be seen"
+      },
+      "human/accent": {
+        "light": "#493D8A",
+        "dark": "#A89CF7",
+        "use": "Data people entered: entries, endorsements, actions"
+      },
+      "human/tint": {
+        "light": "#EEEBFA",
+        "dark": "#262150",
+        "use": "Background for human data chips"
+      },
+      "spark/accent": {
+        "light": "#F3328D",
+        "dark": "#FF5FA8",
+        "use": "AI-generated only. Spark mark, generated edge, AI action"
+      },
+      "spark/text": {
+        "light": "#BF1B79",
+        "dark": "#FF8CC0",
+        "use": "AI labels as text (passes AA on surface)"
+      },
+      "spark/tint": {
+        "light": "#FDEAF3",
+        "dark": "#3A1530",
+        "use": "Background for AI chips and generating state"
+      },
+      "spark/on": {
+        "light": "#FFFFFF",
+        "dark": "#1C0A16",
+        "use": "Text on spark/accent"
+      },
+      "positive/fg": {
+        "light": "#17713F",
+        "dark": "#5FD39A",
+        "use": "Improving, on track"
+      },
+      "positive/tint": {
+        "light": "#E3F6EC",
+        "dark": "#0F2E20",
+        "use": "Positive chip background"
+      },
+      "caution/fg": {
+        "light": "#9A5B00",
+        "dark": "#F2B65A",
+        "use": "Watch, at risk"
+      },
+      "caution/tint": {
+        "light": "#FFF1D6",
+        "dark": "#33240A",
+        "use": "Caution chip background"
+      },
+      "critical/fg": {
+        "light": "#C42B4B",
+        "dark": "#FF7A93",
+        "use": "Off track, error"
+      },
+      "critical/tint": {
+        "light": "#FDE8EC",
+        "dark": "#3A1219",
+        "use": "Critical chip background"
+      },
+      "viz/primary": {
+        "light": "#493D8A",
+        "dark": "#A89CF7",
+        "use": "Main series"
+      },
+      "viz/secondary": {
+        "light": "#9C93DA",
+        "dark": "#6C62B8",
+        "use": "Comparison series"
+      },
+      "viz/muted": {
+        "light": "#DCD8EE",
+        "dark": "#2E2A52",
+        "use": "Baseline, track"
+      },
+      "focus/ring": {
+        "light": "#493D8A",
+        "dark": "#A89CF7",
+        "use": "Keyboard focus outline, 2px"
+      },
+      "spark/action": {
+        "light": "#D6246F",
+        "dark": "#FF5FA8",
+        "use": "Fill for the Generate button (AA with spark/on)"
+      }
+    },
+    "dimension": {
+      "radius/xs": 6,
+      "radius/sm": 10,
+      "radius/md": 16,
+      "radius/lg": 24,
+      "radius/full": 999,
+      "space/2xs": 4,
+      "space/xs": 8,
+      "space/sm": 12,
+      "space/md": 16,
+      "space/lg": 24,
+      "space/xl": 32,
+      "space/2xl": 48
+    },
+    "typography": {
+      "Narrative/Display": {
+        "fontFamily": "Newsreader",
+        "fontWeight": 400,
+        "fontStyle": "normal",
+        "fontSize": 34,
+        "lineHeight": 1.15,
+        "letterSpacing": "-0.01em",
+        "use": "AI-written headline. One per screen. Max 110 characters."
+      },
+      "Narrative/Title": {
+        "fontFamily": "Newsreader",
+        "fontWeight": 500,
+        "fontStyle": "normal",
+        "fontSize": 22,
+        "lineHeight": 1.27,
+        "letterSpacing": "-0.005em",
+        "use": "AI-written insight title. Max 70 characters."
+      },
+      "Narrative/Body": {
+        "fontFamily": "Newsreader",
+        "fontWeight": 400,
+        "fontStyle": "normal",
+        "fontSize": 18,
+        "lineHeight": 1.5,
+        "letterSpacing": "0em",
+        "use": "AI-written explanation. Max 280 characters per block."
+      },
+      "Narrative/Quote": {
+        "fontFamily": "Newsreader",
+        "fontWeight": 400,
+        "fontStyle": "italic",
+        "fontSize": 20,
+        "lineHeight": 1.4,
+        "letterSpacing": "0em",
+        "use": "Verbatim human quote surfaced by AI. Never paraphrase inside quote marks."
+      },
+      "UI/Metric XL": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": 700,
+        "fontStyle": "normal",
+        "fontSize": 40,
+        "lineHeight": 1.1,
+        "letterSpacing": "-0.02em",
+        "use": "Hero number"
+      },
+      "UI/Metric M": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": 700,
+        "fontStyle": "normal",
+        "fontSize": 24,
+        "lineHeight": 1.17,
+        "letterSpacing": "-0.01em",
+        "use": "Inline metric"
+      },
+      "UI/Title L": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": 700,
+        "fontStyle": "normal",
+        "fontSize": 20,
+        "lineHeight": 1.3,
+        "letterSpacing": "-0.005em",
+        "use": "Screen and sheet titles"
+      },
+      "UI/Title M": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": 600,
+        "fontStyle": "normal",
+        "fontSize": 16,
+        "lineHeight": 1.37,
+        "letterSpacing": "0em",
+        "use": "Card titles, list item titles"
+      },
+      "UI/Body": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": 400,
+        "fontStyle": "normal",
+        "fontSize": 15,
+        "lineHeight": 1.47,
+        "letterSpacing": "0em",
+        "use": "Interface body text"
+      },
+      "UI/Body S": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": 400,
+        "fontStyle": "normal",
+        "fontSize": 13,
+        "lineHeight": 1.38,
+        "letterSpacing": "0em",
+        "use": "Secondary interface text"
+      },
+      "UI/Label": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": 600,
+        "fontStyle": "normal",
+        "fontSize": 13,
+        "lineHeight": 1.23,
+        "letterSpacing": "0em",
+        "use": "Chips, tabs, field labels"
+      },
+      "UI/Caption": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": 500,
+        "fontStyle": "normal",
+        "fontSize": 12,
+        "lineHeight": 1.33,
+        "letterSpacing": "0em",
+        "use": "Provenance, timestamps"
+      },
+      "UI/Button": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontWeight": 600,
+        "fontStyle": "normal",
+        "fontSize": 15,
+        "lineHeight": 1.33,
+        "letterSpacing": "0em",
+        "use": "Buttons"
+      }
+    }
+  },
+  "components": [
+    {
+      "name": "gen/atom/icon/spark",
+      "figma_id": "1903:9941",
+      "level": "atom",
+      "purpose": "Marks AI-generated content. Never decorative.",
+      "props": {
+        "color": "token, default spark/accent"
+      }
+    },
+    {
+      "name": "gen/atom/icon/arrow-up",
+      "figma_id": "1903:9945",
+      "level": "atom",
+      "purpose": "Send a question.",
+      "props": {
+        "color": "token, default fg/primary"
+      }
+    },
+    {
+      "name": "gen/atom/icon/plus",
+      "figma_id": "1903:9949",
+      "level": "atom",
+      "purpose": "Add data.",
+      "props": {
+        "color": "token, default fg/primary"
+      }
+    },
+    {
+      "name": "gen/atom/icon/chevron-right",
+      "figma_id": "1903:9953",
+      "level": "atom",
+      "purpose": "Go to detail.",
+      "props": {
+        "color": "token, default fg/primary"
+      }
+    },
+    {
+      "name": "gen/atom/icon/check",
+      "figma_id": "1903:9957",
+      "level": "atom",
+      "purpose": "Confirmed, added.",
+      "props": {
+        "color": "token, default fg/primary"
+      }
+    },
+    {
+      "name": "gen/atom/icon/lock",
+      "figma_id": "1903:9961",
+      "level": "atom",
+      "purpose": "Private or paid content.",
+      "props": {
+        "color": "token, default fg/primary"
+      }
+    },
+    {
+      "name": "gen/atom/icon/regenerate",
+      "figma_id": "1903:9965",
+      "level": "atom",
+      "purpose": "Regenerate an insight.",
+      "props": {
+        "color": "token, default fg/primary"
+      }
+    },
+    {
+      "name": "gen/atom/icon/info",
+      "figma_id": "1903:9969",
+      "level": "atom",
+      "purpose": "Explain how this was generated.",
+      "props": {
+        "color": "token, default fg/primary"
+      }
+    },
+    {
+      "name": "gen/atom/icon/people",
+      "figma_id": "1903:9973",
+      "level": "atom",
+      "purpose": "People, sources.",
+      "props": {
+        "color": "token, default fg/primary"
+      }
+    },
+    {
+      "name": "gen/atom/icon/home",
+      "figma_id": "1903:9977",
+      "level": "atom",
+      "purpose": "Home tab.",
+      "props": {
+        "color": "token, default fg/primary"
+      }
+    },
+    {
+      "name": "gen/atom/icon/chart",
+      "figma_id": "1903:9981",
+      "level": "atom",
+      "purpose": "Company tab.",
+      "props": {
+        "color": "token, default fg/primary"
+      }
+    },
+    {
+      "name": "gen/atom/icon/credits",
+      "figma_id": "1903:9985",
+      "level": "atom",
+      "purpose": "Credits earned or spent.",
+      "props": {
+        "color": "token, default fg/primary"
+      }
+    },
+    {
+      "name": "gen/atom/button",
+      "figma_id": "1903:10004",
+      "level": "atom",
+      "purpose": "Trigger an action.",
+      "use_when": "Primary: one per screen, the main human action. Generate: the action calls the model. Secondary: alternative action. Ghost: low-emphasis, inline.",
+      "props": {
+        "kind": "Primary | Generate | Secondary | Ghost",
+        "label": "string, verb first, max 24 chars"
+      },
+      "rules": [
+        "Label states the outcome: \"Generate summary\", not \"Submit\"",
+        "The toast after an action reuses the verb: Generate summary -> \"Summary generated\""
+      ],
+      "variants": {
+        "Kind": [
+          "Primary",
+          "Generate",
+          "Secondary",
+          "Ghost"
+        ]
+      }
+    },
+    {
+      "name": "gen/atom/chip",
+      "figma_id": "1903:10024",
+      "level": "atom",
+      "purpose": "Label provenance or status in one or two words.",
+      "props": {
+        "tone": "AI | Human | Positive | Caution | Critical | Neutral",
+        "label": "string, max 18 chars"
+      },
+      "rules": [
+        "AI tone always shows the spark",
+        "Status tones always pair colour with a word"
+      ],
+      "variants": {
+        "Tone": [
+          "AI",
+          "Human",
+          "Positive",
+          "Caution",
+          "Critical",
+          "Neutral"
+        ]
+      }
+    },
+    {
+      "name": "gen/atom/confidence",
+      "figma_id": "1903:10048",
+      "level": "atom",
+      "purpose": "Show model confidence for a generated statement.",
+      "props": {
+        "level": "High (>=5 agreeing sources) | Medium (2-4) | Low (1 or conflicting)"
+      },
+      "rules": [
+        "Low confidence: the narrative must hedge (\"may\", \"early signal\")",
+        "Never hide confidence on a generated insight"
+      ],
+      "variants": {
+        "Level": [
+          "High",
+          "Medium",
+          "Low"
+        ]
+      }
+    },
+    {
+      "name": "gen/atom/delta",
+      "figma_id": "1903:10060",
+      "level": "atom",
+      "purpose": "Period-over-period change.",
+      "props": {
+        "direction": "Up | Down | Flat",
+        "value": "string like \"12%\""
+      },
+      "rules": [
+        "If \"up\" is bad for this metric (e.g. churn), swap tone: Up uses critical/fg"
+      ],
+      "variants": {
+        "Direction": [
+          "Up",
+          "Down",
+          "Flat"
+        ]
+      }
+    },
+    {
+      "name": "gen/atom/switch",
+      "figma_id": "1903:10070",
+      "level": "atom",
+      "purpose": "Binary visibility setting for contributed data.",
+      "props": {
+        "state": "On (public) | Off (private)"
+      },
+      "variants": {
+        "State": [
+          "On",
+          "Off"
+        ]
+      }
+    },
+    {
+      "name": "gen/atom/avatar",
+      "figma_id": "1903:10079",
+      "level": "atom",
+      "purpose": "Identify a person who contributed or is the subject.",
+      "props": {
+        "size": "L 88 | M 40 | S 24",
+        "image": "url"
+      },
+      "variants": {
+        "Size": [
+          "L",
+          "M",
+          "S"
+        ]
+      }
+    },
+    {
+      "name": "gen/atom/sparkline",
+      "figma_id": "1903:10091",
+      "level": "atom",
+      "purpose": "Show direction of a metric over time.",
+      "props": {
+        "tone": "Primary (measured data) | AI (projected/forecast values)",
+        "series": "number[6..12]"
+      },
+      "rules": [
+        "Projections use the AI tone and must be labelled \"Projected\"",
+        "No axes, no gridlines; pair with a metric value"
+      ],
+      "variants": {
+        "Tone": [
+          "Primary",
+          "AI"
+        ]
+      }
+    },
+    {
+      "name": "gen/atom/bar",
+      "figma_id": "1903:10105",
+      "level": "atom",
+      "purpose": "Show a proportion or compare magnitudes.",
+      "props": {
+        "tone": "Primary | Secondary | Caution | Critical",
+        "value": "0..1, sets width of \"value\" layer"
+      },
+      "rules": [
+        "Comparison: Primary = the subject, Secondary = the benchmark"
+      ],
+      "variants": {
+        "Tone": [
+          "Primary",
+          "Secondary",
+          "Caution",
+          "Critical"
+        ]
+      }
+    },
+    {
+      "name": "gen/atom/skeleton",
+      "figma_id": "1903:10114",
+      "level": "atom",
+      "purpose": "Reserve space for content being generated.",
+      "rules": [
+        "Show for at most 8 seconds, then stream text in",
+        "Pair with a status line, e.g. \"Reading 14 entries\""
+      ],
+      "variants": {
+        "Shape": [
+          "Line",
+          "Title",
+          "Block"
+        ]
+      }
+    },
+    {
+      "name": "gen/molecule/provenance",
+      "figma_id": "1903:10161",
+      "level": "molecule",
+      "purpose": "Attribute a generated block to its sources and confidence.",
+      "props": {
+        "confidence": "High | Medium | Low",
+        "sources": "string \"From {n} entries, {m} people\""
+      },
+      "rules": [
+        "Mandatory under every gen/insight/*",
+        "\"How?\" opens a sheet listing each source with a link"
+      ],
+      "variants": {
+        "Confidence": [
+          "High",
+          "Medium",
+          "Low"
+        ]
+      }
+    },
+    {
+      "name": "gen/molecule/metric",
+      "figma_id": "1903:10182",
+      "level": "molecule",
+      "purpose": "Show one metric with context.",
+      "props": {
+        "size": "XL | M",
+        "label": "string max 28",
+        "value": "formatted string",
+        "delta": "gen/atom/delta",
+        "series": "optional number[] (XL only)"
+      },
+      "variants": {
+        "Size": [
+          "XL",
+          "M"
+        ]
+      }
+    },
+    {
+      "name": "gen/molecule/suggestion",
+      "figma_id": "1903:10188",
+      "level": "molecule",
+      "purpose": "Offer a next question to ask the model.",
+      "props": {
+        "question": "string, max 40 chars, ends with \"?\""
+      },
+      "rules": [
+        "Max 3 per screen",
+        "Must be answerable from available data"
+      ]
+    },
+    {
+      "name": "gen/molecule/feedback",
+      "figma_id": "1903:10197",
+      "level": "molecule",
+      "purpose": "Collect a rating for a generated insight; offer regeneration.",
+      "rules": [
+        "Send {insight_id, rating} to /feedback",
+        "Regenerate keeps the same sources and asks for a different angle"
+      ]
+    },
+    {
+      "name": "gen/molecule/comparison-row",
+      "figma_id": "1903:10221",
+      "level": "molecule",
+      "purpose": "Compare one group against others.",
+      "props": {
+        "role": "Subject | Benchmark",
+        "group": "string max 14",
+        "value": "string",
+        "ratio": "0..1"
+      },
+      "variants": {
+        "Role": [
+          "Subject",
+          "Benchmark"
+        ]
+      }
+    },
+    {
+      "name": "gen/molecule/data-row",
+      "figma_id": "1903:10251",
+      "level": "molecule",
+      "purpose": "Show and control one human-contributed entry.",
+      "props": {
+        "title": "string",
+        "meta": "string \"{org}, {start} \u2013 {end}\"",
+        "stats": "string",
+        "visibility": "Public | Private"
+      },
+      "rules": [
+        "Never render with spark: this is human data",
+        "Public entries earn credits when viewed"
+      ],
+      "variants": {
+        "Visibility": [
+          "Public",
+          "Private"
+        ]
+      }
+    },
+    {
+      "name": "gen/molecule/composer-field",
+      "figma_id": "1903:10267",
+      "level": "molecule",
+      "purpose": "Free-text question input for the model.",
+      "props": {
+        "state": "Empty | Typing",
+        "placeholder": "string, names the scope: \"Ask about your team\""
+      },
+      "variants": {
+        "State": [
+          "Empty",
+          "Typing"
+        ]
+      }
+    },
+    {
+      "name": "gen/molecule/next-step",
+      "figma_id": "1903:10283",
+      "level": "molecule",
+      "purpose": "Offer an AI-suggested action the human confirms.",
+      "props": {
+        "state": "Suggested | Added",
+        "step": "string, starts with a verb, max 70 chars"
+      },
+      "rules": [
+        "Never auto-execute",
+        "Max 3 per insight"
+      ],
+      "variants": {
+        "State": [
+          "Suggested",
+          "Added"
+        ]
+      }
+    },
+    {
+      "name": "gen/molecule/quote",
+      "figma_id": "1903:10289",
+      "level": "molecule",
+      "purpose": "Surface verbatim human evidence.",
+      "props": {
+        "quote": "string, verbatim, max 160 chars",
+        "author": "\"{name}, {role}\""
+      },
+      "rules": [
+        "Never edit words inside the quote marks",
+        "Only quote feedback whose author made it public"
+      ]
+    },
+    {
+      "name": "gen/molecule/status-line",
+      "figma_id": "1903:10299",
+      "level": "molecule",
+      "purpose": "Show generation progress.",
+      "props": {
+        "status": "string, present tense, names data: \"Reading {n} entries\""
+      }
+    },
+    {
+      "name": "gen/molecule/text-area",
+      "figma_id": "1903:10823",
+      "level": "molecule",
+      "purpose": "Long-form human input.",
+      "props": {
+        "label": "string question form",
+        "value": "string",
+        "hint": "string"
+      }
+    },
+    {
+      "name": "gen/molecule/input",
+      "figma_id": "1903:12520",
+      "level": "molecule",
+      "purpose": "Collect one line of text.",
+      "props": {
+        "state": "Default | Focused | Error",
+        "label": "string, always visible",
+        "value": "string",
+        "hint": "string; in Error, the fix"
+      },
+      "variants": {
+        "State": [
+          "Default",
+          "Focused",
+          "Error"
+        ]
+      }
+    },
+    {
+      "name": "gen/molecule/stepper",
+      "figma_id": "1903:12554",
+      "level": "molecule",
+      "purpose": "Show position in a multi-step flow.",
+      "props": {
+        "step": "1-4",
+        "label": "\"Step {n} of 4, {name}\""
+      },
+      "variants": {
+        "Step": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ]
+      }
+    },
+    {
+      "name": "gen/molecule/select-chip",
+      "figma_id": "1903:12572",
+      "level": "molecule",
+      "purpose": "Toggle one option; show whether the model proposed it.",
+      "props": {
+        "state": "Selected (confirmed by person) | Suggested (proposed by model, not yet confirmed) | Unselected",
+        "label": "string max 28"
+      },
+      "rules": [
+        "Model output starts as Suggested; only a tap makes it Selected",
+        "Never pre-select on the person's behalf"
+      ],
+      "variants": {
+        "State": [
+          "Selected",
+          "Suggested",
+          "Unselected"
+        ]
+      }
+    },
+    {
+      "name": "gen/molecule/avatar-stack",
+      "figma_id": "1903:12578",
+      "level": "molecule",
+      "purpose": "Represent a group of people compactly.",
+      "props": {
+        "people": "1-5 avatars",
+        "count": "\"+{n}\" when more than 5"
+      }
+    },
+    {
+      "name": "gen/molecule/task",
+      "figma_id": "1903:12599",
+      "level": "molecule",
+      "purpose": "A person-authored task.",
+      "props": {
+        "state": "Open | Done",
+        "task": "string"
+      },
+      "variants": {
+        "State": [
+          "Open",
+          "Done"
+        ]
+      }
+    },
+    {
+      "name": "gen/insight/narrative",
+      "figma_id": "1903:10443",
+      "level": "organism",
+      "purpose": "Generated headline summarising everything in scope.",
+      "use_when": "First block of every generated screen.",
+      "props": {
+        "kicker": "string \"{scope}, updated {relative time}\"",
+        "headline": "string 60-140 chars, 1-2 sentences, second person for the owner, third person for viewers",
+        "confidence": "High | Medium | Low",
+        "suggestions": "0-3 gen/molecule/suggestion"
+      },
+      "rules": [
+        "Lead with the finding, then the evidence",
+        "Include one concrete number when available",
+        "If confidence is Low, hedge: \"Early signs suggest...\"",
+        "Never invent names or numbers not present in sources"
+      ]
+    },
+    {
+      "name": "gen/insight/trend",
+      "figma_id": "1903:10475",
+      "level": "organism",
+      "purpose": "Explain a change in one metric over time.",
+      "use_when": "A metric moved more than 5% period over period, or has 3+ periods in one direction.",
+      "props": {
+        "title": "string max 70, states the direction",
+        "metric": "gen/molecule/metric XL",
+        "body": "string max 200, names the cause if sources support it",
+        "confidence": "High | Medium | Low"
+      }
+    },
+    {
+      "name": "gen/insight/comparison",
+      "figma_id": "1903:10526",
+      "level": "organism",
+      "purpose": "Compare one group against benchmarks.",
+      "use_when": "The subject differs from the benchmark by more than 10%.",
+      "props": {
+        "title": "string max 70",
+        "rows": "2-5 gen/molecule/comparison-row, subject first",
+        "body": "string max 160"
+      },
+      "rules": [
+        "Sort benchmarks by value descending",
+        "Use the same unit in every row"
+      ]
+    },
+    {
+      "name": "gen/insight/evidence",
+      "figma_id": "1903:10577",
+      "level": "organism",
+      "purpose": "Back a generated claim with verbatim human evidence.",
+      "use_when": "A narrative or insight makes a claim about a person; show the strongest public quote that supports it.",
+      "props": {
+        "quote": "gen/molecule/quote",
+        "why": "string max 120, generated, explains the pattern across sources"
+      },
+      "rules": [
+        "Only public feedback",
+        "Quote is human (no spark); the \"why\" line is AI (spark)"
+      ]
+    },
+    {
+      "name": "gen/insight/risk",
+      "figma_id": "1903:10669",
+      "level": "organism",
+      "purpose": "Flag something that needs attention and say what to do.",
+      "use_when": "A key result is below 60% of expected pace, a metric fell >10%, or a team lost managers.",
+      "props": {
+        "severity": "Caution | Critical",
+        "title": "string max 70, states the problem",
+        "body": "string max 200, quantifies impact",
+        "next_steps": "1-3 gen/molecule/next-step"
+      },
+      "rules": [
+        "Always include at least one next step",
+        "Critical only when people or deadlines are affected within 30 days"
+      ],
+      "variants": {
+        "Severity": [
+          "Caution",
+          "Critical"
+        ]
+      }
+    },
+    {
+      "name": "gen/insight/next-steps",
+      "figma_id": "1903:10675",
+      "level": "organism",
+      "purpose": "Turn insights into a short list of human-confirmed actions.",
+      "use_when": "At the end of a screen with at least one risk or growth insight.",
+      "props": {
+        "title": "string, names the moment: \"For your 1:1 with {name} on {day}\"",
+        "steps": "1-3 gen/molecule/next-step"
+      },
+      "rules": [
+        "Steps start with a verb",
+        "Never auto-execute; the person adds or dismisses"
+      ]
+    },
+    {
+      "name": "gen/state/generating",
+      "figma_id": "1903:10719",
+      "level": "organism",
+      "purpose": "Hold the place of an insight being generated.",
+      "rules": [
+        "Replace each skeleton as text streams in",
+        "After 20 s show \"Still working\" with a cancel option"
+      ]
+    },
+    {
+      "name": "gen/state/not-enough-data",
+      "figma_id": "1903:10728",
+      "level": "organism",
+      "purpose": "Explain why nothing was generated and how to fix it.",
+      "use_when": "Fewer than 3 entries or 2 feedback notes in scope.",
+      "rules": [
+        "State the exact threshold",
+        "Offer the one action that unlocks generation"
+      ]
+    },
+    {
+      "name": "gen/state/locked",
+      "figma_id": "1903:10736",
+      "level": "organism",
+      "purpose": "Show that an insight exists without revealing it.",
+      "use_when": "Viewer lacks access to the sources an insight was generated from.",
+      "props": {
+        "title": "string, the insight title is visible",
+        "price": "credits integer"
+      },
+      "rules": [
+        "Never generate locked insights from content the viewer could not unlock",
+        "Title may be shown; body never"
+      ]
+    },
+    {
+      "name": "gen/frame/app-bar",
+      "figma_id": "1903:10785",
+      "level": "organism",
+      "purpose": "Screen header with context and credit balance.",
+      "props": {
+        "context": "Owner | Viewer | Leader",
+        "title": "string",
+        "subtitle": "string",
+        "credits": "integer, hidden for Leader"
+      },
+      "variants": {
+        "Context": [
+          "Owner",
+          "Viewer",
+          "Leader"
+        ]
+      }
+    },
+    {
+      "name": "gen/frame/composer-dock",
+      "figma_id": "1903:10786",
+      "level": "organism",
+      "purpose": "Ask the model a question about the data in scope.",
+      "props": {
+        "suggestions": "0-3 gen/molecule/suggestion",
+        "placeholder": "names the scope"
+      },
+      "rules": [
+        "Pinned 8px above the tab bar",
+        "Answers render as new gen/insight/* blocks, not chat bubbles"
+      ]
+    },
+    {
+      "name": "gen/frame/tab-bar",
+      "figma_id": "1903:10801",
+      "level": "organism",
+      "purpose": "Primary navigation.",
+      "props": {
+        "active": "Home | Contribute | People | Company (Company only for leaders)"
+      }
+    },
+    {
+      "name": "gen/insight/team-summary",
+      "figma_id": "1903:12605",
+      "level": "organism",
+      "purpose": "Summarise one team with a generated read and three metrics.",
+      "use_when": "Teams overview: one per team, sorted by the metric the leader asked about (default: biggest change).",
+      "props": {
+        "team": "string",
+        "meta": "\"{n} people, led by {name}\"",
+        "read": "string max 140, generated, compares to company average",
+        "metrics": "exactly 3 gen/molecule/metric M, each with delta vs company average"
+      },
+      "rules": [
+        "Teams under 5 people show only aggregates the grammar allows"
+      ]
+    },
+    {
+      "name": "gen/data/task-group",
+      "figma_id": "1903:12665",
+      "level": "organism",
+      "purpose": "Show a person-authored goal with its tasks and progress.",
+      "props": {
+        "goal": "string",
+        "category": "gen/atom/chip Human",
+        "expected": "string",
+        "tasks": "1-8 gen/molecule/task",
+        "due": "\"{done} of {total}, due {date}\""
+      },
+      "rules": [
+        "Human data: never add a spark here",
+        "The model may summarise task groups in a narrative, but never edits them"
+      ]
+    },
+    {
+      "name": "gen/insight/chart",
+      "figma_id": "1906:14411",
+      "level": "organism",
+      "purpose": "Show data a sentence cannot: several groups or periods at once.",
+      "use_when": "Bars: compare 2-6 groups or periods, max 2 series. Line: a value over 5+ periods; projections only with Medium or High confidence.",
+      "props": {
+        "type": "Bars | Line",
+        "title": "string max 70",
+        "series": "[{name, values[], role: primary|secondary|projected|reference}]",
+        "x_labels": "string[]",
+        "y_labels": "3 strings, top to bottom",
+        "body": "string max 160, says what to notice"
+      },
+      "rules": [
+        "Projected values always use spark/accent dashed and the legend says \"Projected\"",
+        "Max 2 measured series; use a comparison insight for more groups",
+        "Never a pie or radar chart"
+      ],
+      "variants": {
+        "Type": [
+          "Bars",
+          "Line"
+        ]
+      }
+    },
+    {
+      "name": "gen/molecule/nav-item",
+      "figma_id": "1906:14420",
+      "level": "molecule",
+      "purpose": "One destination in the desktop sidebar.",
+      "props": {
+        "state": "Active | Default",
+        "icon": "gen/atom/icon/*",
+        "label": "string"
+      },
+      "variants": {
+        "State": [
+          "Active",
+          "Default"
+        ]
+      }
+    },
+    {
+      "name": "gen/frame/sidebar",
+      "figma_id": "1906:14421",
+      "level": "organism",
+      "purpose": "Desktop navigation, account and credit balance. Replaces the tab bar above 1024px.",
+      "props": {
+        "active": "Home | Contribute | People | Company | Tasks (Company only for leaders)",
+        "name": "string",
+        "company": "string",
+        "credits": "integer"
+      },
+      "rules": [
+        "Fills the viewport height; content scrolls, the sidebar does not",
+        "The model never generates sidebar content"
+      ]
+    },
+    {
+      "name": "gen/template/home-owner",
+      "figma_id": "1906:14476",
+      "level": "template",
+      "purpose": "Owner home: narrative, evidence, trend, own data, next steps.",
+      "rules": [
+        "Blocks between the app bar and the composer are replaced by generated blocks following the Grammar board",
+        "Keep the fixed chrome: app bar, composer dock, tab bar"
+      ]
+    },
+    {
+      "name": "gen/template/contribute",
+      "figma_id": "1906:14477",
+      "level": "template",
+      "purpose": "Add an entry: text area, AI follow-up, preview of what changes, visibility.",
+      "rules": [
+        "Blocks between the app bar and the composer are replaced by generated blocks following the Grammar board",
+        "Keep the fixed chrome: app bar, composer dock, tab bar"
+      ]
+    },
+    {
+      "name": "gen/template/profile-viewer",
+      "figma_id": "1906:14478",
+      "level": "template",
+      "purpose": "Someone else's profile: generated from public data only, private insights locked.",
+      "rules": [
+        "Blocks between the app bar and the composer are replaced by generated blocks following the Grammar board",
+        "Keep the fixed chrome: app bar, composer dock, tab bar"
+      ]
+    },
+    {
+      "name": "gen/template/company-overview",
+      "figma_id": "1906:14479",
+      "level": "template",
+      "purpose": "Leader overview: narrative, risks, trend, comparison, key numbers, next steps.",
+      "rules": [
+        "Blocks between the app bar and the composer are replaced by generated blocks following the Grammar board",
+        "Keep the fixed chrome: app bar, composer dock, tab bar"
+      ]
+    }
+  ],
+  "screen_example": {
+    "schema": "genui.screen/1.0",
+    "context": "leader",
+    "scope": {
+      "company": "Zendaya Co.",
+      "period": "2026-10"
+    },
+    "generated_at": "2026-11-19T09:00:00Z",
+    "blocks": [
+      {
+        "type": "gen/insight/narrative",
+        "kicker": "Zendaya Co., this month",
+        "headline": "Engagement is up, but Sales is slipping. Two manager exits left 9 people without 1:1s.",
+        "confidence": "High",
+        "sources": {
+          "entries": 54,
+          "teams": 6,
+          "okrs": 3
+        },
+        "suggestions": [
+          "Who should cover those 1:1s?",
+          "Show salaries by team"
+        ]
+      },
+      {
+        "type": "gen/insight/risk",
+        "severity": "Critical",
+        "title": "Two Sales managers left in July",
+        "body": "Their 9 reports have had no 1:1 since. Engagement in that group dropped 14 points.",
+        "next_steps": [
+          "Assign interim managers for the 9 reports"
+        ],
+        "confidence": "Medium",
+        "source_ids": [
+          "hr:exit:0712",
+          "hr:exit:0729",
+          "survey:2026-10"
+        ]
+      },
+      {
+        "type": "gen/insight/trend",
+        "title": "Employee NPS is climbing for the third month",
+        "metric": {
+          "label": "Employee NPS",
+          "value": "45",
+          "delta": {
+            "direction": "Up",
+            "value": "12%"
+          },
+          "series": [
+            30,
+            26,
+            28,
+            20,
+            22,
+            14,
+            10,
+            6
+          ]
+        },
+        "body": "Engineering moved from 31 to 52 after weekly 1:1s started.",
+        "confidence": "High",
+        "source_ids": [
+          "survey:2026-08",
+          "survey:2026-09",
+          "survey:2026-10"
+        ]
+      },
+      {
+        "type": "gen/insight/next-steps",
+        "title": "For Monday's leadership sync",
+        "steps": [
+          {
+            "text": "Assign interim managers for the 9 Sales reports",
+            "state": "Suggested"
+          }
+        ],
+        "confidence": "Medium"
+      }
+    ]
+  },
+  "limits": {
+    "max_generated_blocks": 6,
+    "max_suggestions": 3,
+    "min_entries_for_generation": 3,
+    "min_feedback_for_generation": 2,
+    "min_group_size_leader": 5
+  },
+  "flows": {
+    "page": "Overview flows (Mobile first)",
+    "section_id": "1906:12691",
+    "flows": [
+      "Arrive",
+      "Onboarding",
+      "Company and teams",
+      "One report",
+      "Tasks"
+    ],
+    "desktop": true
+  },
+  "layout": {
+    "mobile": {
+      "width": 390,
+      "gutter": 16,
+      "nav": "gen/frame/tab-bar",
+      "composer": "gen/frame/composer-dock, pinned above tab bar"
+    },
+    "desktop": {
+      "width": 1440,
+      "breakpoint": 1024,
+      "nav": "gen/frame/sidebar (264px)",
+      "composer": "gen/molecule/composer-field in the top bar, 440px",
+      "grid": "primary column fluid + secondary column 400px, 32px gap, 40px padding",
+      "placement": "Primary: narrative, critical risks, trends/charts. Secondary: key numbers, caution risks, comparisons, next steps."
+    }
+  },
+  "tokens_note": "GenUI / Color now aliases Moonshot / Primitives (3-tier). Resolve aliases to get hex values.",
+  "sample_cast": {
+    "people": [
+      "Anderson Silva",
+      "Amelia Earhart",
+      "Rafael Fedeli",
+      "Marina Costa",
+      "Lucas Prado"
+    ],
+    "note": "All names and numbers are sample data"
+  }
+}

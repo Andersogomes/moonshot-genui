@@ -1,0 +1,849 @@
+{
+  "gen/atom/icon/spark": {
+    "desc": "purpose: Marks AI-generated content. Never decorative.\nprops:\n  color: token, default spark/accent\na11y: Decorative when next to a text label; otherwise needs aria-label.",
+    "spec": {
+      "id": "gen/atom/icon/spark",
+      "level": "atom",
+      "purpose": "Marks AI-generated content. Never decorative.",
+      "props": {
+        "color": "token, default spark/accent"
+      },
+      "a11y": "Decorative when next to a text label; otherwise needs aria-label."
+    }
+  },
+  "gen/atom/icon/arrow-up": {
+    "desc": "purpose: Send a question.\nprops:\n  color: token, default fg/primary\na11y: Decorative when next to a text label; otherwise needs aria-label.",
+    "spec": {
+      "id": "gen/atom/icon/arrow-up",
+      "level": "atom",
+      "purpose": "Send a question.",
+      "props": {
+        "color": "token, default fg/primary"
+      },
+      "a11y": "Decorative when next to a text label; otherwise needs aria-label."
+    }
+  },
+  "gen/atom/icon/plus": {
+    "desc": "purpose: Add data.\nprops:\n  color: token, default fg/primary\na11y: Decorative when next to a text label; otherwise needs aria-label.",
+    "spec": {
+      "id": "gen/atom/icon/plus",
+      "level": "atom",
+      "purpose": "Add data.",
+      "props": {
+        "color": "token, default fg/primary"
+      },
+      "a11y": "Decorative when next to a text label; otherwise needs aria-label."
+    }
+  },
+  "gen/atom/icon/chevron-right": {
+    "desc": "purpose: Go to detail.\nprops:\n  color: token, default fg/primary\na11y: Decorative when next to a text label; otherwise needs aria-label.",
+    "spec": {
+      "id": "gen/atom/icon/chevron-right",
+      "level": "atom",
+      "purpose": "Go to detail.",
+      "props": {
+        "color": "token, default fg/primary"
+      },
+      "a11y": "Decorative when next to a text label; otherwise needs aria-label."
+    }
+  },
+  "gen/atom/icon/check": {
+    "desc": "purpose: Confirmed, added.\nprops:\n  color: token, default fg/primary\na11y: Decorative when next to a text label; otherwise needs aria-label.",
+    "spec": {
+      "id": "gen/atom/icon/check",
+      "level": "atom",
+      "purpose": "Confirmed, added.",
+      "props": {
+        "color": "token, default fg/primary"
+      },
+      "a11y": "Decorative when next to a text label; otherwise needs aria-label."
+    }
+  },
+  "gen/atom/icon/lock": {
+    "desc": "purpose: Private or paid content.\nprops:\n  color: token, default fg/primary\na11y: Decorative when next to a text label; otherwise needs aria-label.",
+    "spec": {
+      "id": "gen/atom/icon/lock",
+      "level": "atom",
+      "purpose": "Private or paid content.",
+      "props": {
+        "color": "token, default fg/primary"
+      },
+      "a11y": "Decorative when next to a text label; otherwise needs aria-label."
+    }
+  },
+  "gen/atom/icon/regenerate": {
+    "desc": "purpose: Regenerate an insight.\nprops:\n  color: token, default fg/primary\na11y: Decorative when next to a text label; otherwise needs aria-label.",
+    "spec": {
+      "id": "gen/atom/icon/regenerate",
+      "level": "atom",
+      "purpose": "Regenerate an insight.",
+      "props": {
+        "color": "token, default fg/primary"
+      },
+      "a11y": "Decorative when next to a text label; otherwise needs aria-label."
+    }
+  },
+  "gen/atom/icon/info": {
+    "desc": "purpose: Explain how this was generated.\nprops:\n  color: token, default fg/primary\na11y: Decorative when next to a text label; otherwise needs aria-label.",
+    "spec": {
+      "id": "gen/atom/icon/info",
+      "level": "atom",
+      "purpose": "Explain how this was generated.",
+      "props": {
+        "color": "token, default fg/primary"
+      },
+      "a11y": "Decorative when next to a text label; otherwise needs aria-label."
+    }
+  },
+  "gen/atom/icon/people": {
+    "desc": "purpose: People, sources.\nprops:\n  color: token, default fg/primary\na11y: Decorative when next to a text label; otherwise needs aria-label.",
+    "spec": {
+      "id": "gen/atom/icon/people",
+      "level": "atom",
+      "purpose": "People, sources.",
+      "props": {
+        "color": "token, default fg/primary"
+      },
+      "a11y": "Decorative when next to a text label; otherwise needs aria-label."
+    }
+  },
+  "gen/atom/icon/home": {
+    "desc": "purpose: Home tab.\nprops:\n  color: token, default fg/primary\na11y: Decorative when next to a text label; otherwise needs aria-label.",
+    "spec": {
+      "id": "gen/atom/icon/home",
+      "level": "atom",
+      "purpose": "Home tab.",
+      "props": {
+        "color": "token, default fg/primary"
+      },
+      "a11y": "Decorative when next to a text label; otherwise needs aria-label."
+    }
+  },
+  "gen/atom/icon/chart": {
+    "desc": "purpose: Company tab.\nprops:\n  color: token, default fg/primary\na11y: Decorative when next to a text label; otherwise needs aria-label.",
+    "spec": {
+      "id": "gen/atom/icon/chart",
+      "level": "atom",
+      "purpose": "Company tab.",
+      "props": {
+        "color": "token, default fg/primary"
+      },
+      "a11y": "Decorative when next to a text label; otherwise needs aria-label."
+    }
+  },
+  "gen/atom/icon/credits": {
+    "desc": "purpose: Credits earned or spent.\nprops:\n  color: token, default fg/primary\na11y: Decorative when next to a text label; otherwise needs aria-label.",
+    "spec": {
+      "id": "gen/atom/icon/credits",
+      "level": "atom",
+      "purpose": "Credits earned or spent.",
+      "props": {
+        "color": "token, default fg/primary"
+      },
+      "a11y": "Decorative when next to a text label; otherwise needs aria-label."
+    }
+  },
+  "gen/atom/button": {
+    "desc": "purpose: Trigger an action.\nuse_when: Primary: one per screen, the main human action. Generate: the action calls the model. Secondary: alternative action. Ghost: low-emphasis, inline.\navoid_when: Never use Generate for actions that do not call the model.\nprops:\n  kind: Primary | Generate | Secondary | Ghost\n  label: string, verb first, max 24 chars\nrules:\n  - Label states the outcome: \"Generate summary\", not \"Submit\"\n  - The toast after an action reuses the verb: Generate summary -> \"Summary generated\"\na11y: Min hit area 44x44. Focus ring: focus/ring 2px, offset 2px.",
+    "spec": {
+      "id": "gen/atom/button",
+      "level": "atom",
+      "purpose": "Trigger an action.",
+      "use": "Primary: one per screen, the main human action. Generate: the action calls the model. Secondary: alternative action. Ghost: low-emphasis, inline.",
+      "avoid": "Never use Generate for actions that do not call the model.",
+      "props": {
+        "kind": "Primary | Generate | Secondary | Ghost",
+        "label": "string, verb first, max 24 chars"
+      },
+      "rules": [
+        "Label states the outcome: \"Generate summary\", not \"Submit\"",
+        "The toast after an action reuses the verb: Generate summary -> \"Summary generated\""
+      ],
+      "a11y": "Min hit area 44x44. Focus ring: focus/ring 2px, offset 2px."
+    }
+  },
+  "gen/atom/chip": {
+    "desc": "purpose: Label provenance or status in one or two words.\nprops:\n  tone: AI | Human | Positive | Caution | Critical | Neutral\n  label: string, max 18 chars\nrules:\n  - AI tone always shows the spark\n  - Status tones always pair colour with a word",
+    "spec": {
+      "id": "gen/atom/chip",
+      "level": "atom",
+      "purpose": "Label provenance or status in one or two words.",
+      "props": {
+        "tone": "AI | Human | Positive | Caution | Critical | Neutral",
+        "label": "string, max 18 chars"
+      },
+      "rules": [
+        "AI tone always shows the spark",
+        "Status tones always pair colour with a word"
+      ]
+    }
+  },
+  "gen/atom/confidence": {
+    "desc": "purpose: Show model confidence for a generated statement.\nprops:\n  level: High (>=5 agreeing sources) | Medium (2-4) | Low (1 or conflicting)\nrules:\n  - Low confidence: the narrative must hedge (\"may\", \"early signal\")\n  - Never hide confidence on a generated insight",
+    "spec": {
+      "id": "gen/atom/confidence",
+      "level": "atom",
+      "purpose": "Show model confidence for a generated statement.",
+      "props": {
+        "level": "High (>=5 agreeing sources) | Medium (2-4) | Low (1 or conflicting)"
+      },
+      "rules": [
+        "Low confidence: the narrative must hedge (\"may\", \"early signal\")",
+        "Never hide confidence on a generated insight"
+      ]
+    }
+  },
+  "gen/atom/delta": {
+    "desc": "purpose: Period-over-period change.\nprops:\n  direction: Up | Down | Flat\n  value: string like \"12%\"\nrules:\n  - If \"up\" is bad for this metric (e.g. churn), swap tone: Up uses critical/fg",
+    "spec": {
+      "id": "gen/atom/delta",
+      "level": "atom",
+      "purpose": "Period-over-period change.",
+      "props": {
+        "direction": "Up | Down | Flat",
+        "value": "string like \"12%\""
+      },
+      "rules": [
+        "If \"up\" is bad for this metric (e.g. churn), swap tone: Up uses critical/fg"
+      ]
+    }
+  },
+  "gen/atom/switch": {
+    "desc": "purpose: Binary visibility setting for contributed data.\nprops:\n  state: On (public) | Off (private)\na11y: role=switch, aria-checked. Label must say \"Public\" or \"Private\".",
+    "spec": {
+      "id": "gen/atom/switch",
+      "level": "atom",
+      "purpose": "Binary visibility setting for contributed data.",
+      "props": {
+        "state": "On (public) | Off (private)"
+      },
+      "a11y": "role=switch, aria-checked. Label must say \"Public\" or \"Private\"."
+    }
+  },
+  "gen/atom/avatar": {
+    "desc": "purpose: Identify a person who contributed or is the subject.\nprops:\n  size: L 88 | M 40 | S 24\n  image: url\na11y: alt = person name",
+    "spec": {
+      "id": "gen/atom/avatar",
+      "level": "atom",
+      "purpose": "Identify a person who contributed or is the subject.",
+      "props": {
+        "size": "L 88 | M 40 | S 24",
+        "image": "url"
+      },
+      "a11y": "alt = person name"
+    }
+  },
+  "gen/atom/sparkline": {
+    "desc": "purpose: Show direction of a metric over time.\nprops:\n  tone: Primary (measured data) | AI (projected/forecast values)\n  series: number[6..12]\nrules:\n  - Projections use the AI tone and must be labelled \"Projected\"\n  - No axes, no gridlines; pair with a metric value",
+    "spec": {
+      "id": "gen/atom/sparkline",
+      "level": "atom",
+      "purpose": "Show direction of a metric over time.",
+      "props": {
+        "tone": "Primary (measured data) | AI (projected/forecast values)",
+        "series": "number[6..12]"
+      },
+      "rules": [
+        "Projections use the AI tone and must be labelled \"Projected\"",
+        "No axes, no gridlines; pair with a metric value"
+      ]
+    }
+  },
+  "gen/atom/bar": {
+    "desc": "purpose: Show a proportion or compare magnitudes.\nprops:\n  tone: Primary | Secondary | Caution | Critical\n  value: 0..1, sets width of \"value\" layer\nrules:\n  - Comparison: Primary = the subject, Secondary = the benchmark",
+    "spec": {
+      "id": "gen/atom/bar",
+      "level": "atom",
+      "purpose": "Show a proportion or compare magnitudes.",
+      "props": {
+        "tone": "Primary | Secondary | Caution | Critical",
+        "value": "0..1, sets width of \"value\" layer"
+      },
+      "rules": [
+        "Comparison: Primary = the subject, Secondary = the benchmark"
+      ]
+    }
+  },
+  "gen/atom/skeleton": {
+    "desc": "purpose: Reserve space for content being generated.\nrules:\n  - Show for at most 8 seconds, then stream text in\n  - Pair with a status line, e.g. \"Reading 14 entries\"\na11y: aria-busy=true on the container; announce when done.",
+    "spec": {
+      "id": "gen/atom/skeleton",
+      "level": "atom",
+      "purpose": "Reserve space for content being generated.",
+      "rules": [
+        "Show for at most 8 seconds, then stream text in",
+        "Pair with a status line, e.g. \"Reading 14 entries\""
+      ],
+      "a11y": "aria-busy=true on the container; announce when done."
+    }
+  },
+  "gen/molecule/provenance": {
+    "desc": "purpose: Attribute a generated block to its sources and confidence.\nprops:\n  confidence: High | Medium | Low\n  sources: string \"From {n} entries, {m} people\"\nrules:\n  - Mandatory under every gen/insight/*\n  - \"How?\" opens a sheet listing each source with a link",
+    "spec": {
+      "id": "gen/molecule/provenance",
+      "level": "molecule",
+      "purpose": "Attribute a generated block to its sources and confidence.",
+      "props": {
+        "confidence": "High | Medium | Low",
+        "sources": "string \"From {n} entries, {m} people\""
+      },
+      "rules": [
+        "Mandatory under every gen/insight/*",
+        "\"How?\" opens a sheet listing each source with a link"
+      ]
+    }
+  },
+  "gen/molecule/metric": {
+    "desc": "purpose: Show one metric with context.\nprops:\n  size: XL | M\n  label: string max 28\n  value: formatted string\n  delta: gen/atom/delta\n  series: optional number[] (XL only)",
+    "spec": {
+      "id": "gen/molecule/metric",
+      "level": "molecule",
+      "purpose": "Show one metric with context.",
+      "props": {
+        "size": "XL | M",
+        "label": "string max 28",
+        "value": "formatted string",
+        "delta": "gen/atom/delta",
+        "series": "optional number[] (XL only)"
+      }
+    }
+  },
+  "gen/molecule/suggestion": {
+    "desc": "purpose: Offer a next question to ask the model.\nprops:\n  question: string, max 40 chars, ends with \"?\"\nrules:\n  - Max 3 per screen\n  - Must be answerable from available data",
+    "spec": {
+      "id": "gen/molecule/suggestion",
+      "level": "molecule",
+      "purpose": "Offer a next question to ask the model.",
+      "props": {
+        "question": "string, max 40 chars, ends with \"?\""
+      },
+      "rules": [
+        "Max 3 per screen",
+        "Must be answerable from available data"
+      ]
+    }
+  },
+  "gen/molecule/feedback": {
+    "desc": "purpose: Collect a rating for a generated insight; offer regeneration.\nrules:\n  - Send {insight_id, rating} to /feedback\n  - Regenerate keeps the same sources and asks for a different angle\na11y: Regenerate icon button needs aria-label \"Regenerate insight\"",
+    "spec": {
+      "id": "gen/molecule/feedback",
+      "level": "molecule",
+      "purpose": "Collect a rating for a generated insight; offer regeneration.",
+      "rules": [
+        "Send {insight_id, rating} to /feedback",
+        "Regenerate keeps the same sources and asks for a different angle"
+      ],
+      "a11y": "Regenerate icon button needs aria-label \"Regenerate insight\""
+    }
+  },
+  "gen/molecule/comparison-row": {
+    "desc": "purpose: Compare one group against others.\nprops:\n  role: Subject | Benchmark\n  group: string max 14\n  value: string\n  ratio: 0..1",
+    "spec": {
+      "id": "gen/molecule/comparison-row",
+      "level": "molecule",
+      "purpose": "Compare one group against others.",
+      "props": {
+        "role": "Subject | Benchmark",
+        "group": "string max 14",
+        "value": "string",
+        "ratio": "0..1"
+      }
+    }
+  },
+  "gen/molecule/data-row": {
+    "desc": "purpose: Show and control one human-contributed entry.\nprops:\n  title: string\n  meta: string \"{org}, {start} \u2013 {end}\"\n  stats: string\n  visibility: Public | Private\nrules:\n  - Never render with spark: this is human data\n  - Public entries earn credits when viewed",
+    "spec": {
+      "id": "gen/molecule/data-row",
+      "level": "molecule",
+      "purpose": "Show and control one human-contributed entry.",
+      "props": {
+        "title": "string",
+        "meta": "string \"{org}, {start} \u2013 {end}\"",
+        "stats": "string",
+        "visibility": "Public | Private"
+      },
+      "rules": [
+        "Never render with spark: this is human data",
+        "Public entries earn credits when viewed"
+      ]
+    }
+  },
+  "gen/molecule/composer-field": {
+    "desc": "purpose: Free-text question input for the model.\nprops:\n  state: Empty | Typing\n  placeholder: string, names the scope: \"Ask about your team\"\na11y: Label the input; send button aria-label \"Ask\"",
+    "spec": {
+      "id": "gen/molecule/composer-field",
+      "level": "molecule",
+      "purpose": "Free-text question input for the model.",
+      "props": {
+        "state": "Empty | Typing",
+        "placeholder": "string, names the scope: \"Ask about your team\""
+      },
+      "a11y": "Label the input; send button aria-label \"Ask\""
+    }
+  },
+  "gen/molecule/next-step": {
+    "desc": "purpose: Offer an AI-suggested action the human confirms.\nprops:\n  state: Suggested | Added\n  step: string, starts with a verb, max 70 chars\nrules:\n  - Never auto-execute\n  - Max 3 per insight",
+    "spec": {
+      "id": "gen/molecule/next-step",
+      "level": "molecule",
+      "purpose": "Offer an AI-suggested action the human confirms.",
+      "props": {
+        "state": "Suggested | Added",
+        "step": "string, starts with a verb, max 70 chars"
+      },
+      "rules": [
+        "Never auto-execute",
+        "Max 3 per insight"
+      ]
+    }
+  },
+  "gen/molecule/quote": {
+    "desc": "purpose: Surface verbatim human evidence.\nprops:\n  quote: string, verbatim, max 160 chars\n  author: \"{name}, {role}\"\nrules:\n  - Never edit words inside the quote marks\n  - Only quote feedback whose author made it public",
+    "spec": {
+      "id": "gen/molecule/quote",
+      "level": "molecule",
+      "purpose": "Surface verbatim human evidence.",
+      "props": {
+        "quote": "string, verbatim, max 160 chars",
+        "author": "\"{name}, {role}\""
+      },
+      "rules": [
+        "Never edit words inside the quote marks",
+        "Only quote feedback whose author made it public"
+      ]
+    }
+  },
+  "gen/molecule/status-line": {
+    "desc": "purpose: Show generation progress.\nprops:\n  status: string, present tense, names data: \"Reading {n} entries\"",
+    "spec": {
+      "id": "gen/molecule/status-line",
+      "level": "molecule",
+      "purpose": "Show generation progress.",
+      "props": {
+        "status": "string, present tense, names data: \"Reading {n} entries\""
+      }
+    }
+  },
+  "gen/molecule/text-area": {
+    "desc": "purpose: Long-form human input.\nprops:\n  label: string question form\n  value: string\n  hint: string",
+    "spec": {
+      "id": "gen/molecule/text-area",
+      "level": "molecule",
+      "purpose": "Long-form human input.",
+      "props": {
+        "label": "string question form",
+        "value": "string",
+        "hint": "string"
+      }
+    }
+  },
+  "gen/molecule/input": {
+    "desc": "purpose: Collect one line of text.\nprops:\n  state: Default | Focused | Error\n  label: string, always visible\n  value: string\n  hint: string; in Error, the fix\na11y: label for=input; hint via aria-describedby; Error sets aria-invalid",
+    "spec": {
+      "id": "gen/molecule/input",
+      "level": "molecule",
+      "purpose": "Collect one line of text.",
+      "props": {
+        "state": "Default | Focused | Error",
+        "label": "string, always visible",
+        "value": "string",
+        "hint": "string; in Error, the fix"
+      },
+      "a11y": "label for=input; hint via aria-describedby; Error sets aria-invalid"
+    }
+  },
+  "gen/molecule/stepper": {
+    "desc": "purpose: Show position in a multi-step flow.\nprops:\n  step: 1-4\n  label: \"Step {n} of 4, {name}\"",
+    "spec": {
+      "id": "gen/molecule/stepper",
+      "level": "molecule",
+      "purpose": "Show position in a multi-step flow.",
+      "props": {
+        "step": "1-4",
+        "label": "\"Step {n} of 4, {name}\""
+      }
+    }
+  },
+  "gen/molecule/select-chip": {
+    "desc": "purpose: Toggle one option; show whether the model proposed it.\nprops:\n  state: Selected (confirmed by person) | Suggested (proposed by model, not yet confirmed) | Unselected\n  label: string max 28\nrules:\n  - Model output starts as Suggested; only a tap makes it Selected\n  - Never pre-select on the person's behalf\na11y: role=checkbox, aria-checked",
+    "spec": {
+      "id": "gen/molecule/select-chip",
+      "level": "molecule",
+      "purpose": "Toggle one option; show whether the model proposed it.",
+      "props": {
+        "state": "Selected (confirmed by person) | Suggested (proposed by model, not yet confirmed) | Unselected",
+        "label": "string max 28"
+      },
+      "rules": [
+        "Model output starts as Suggested; only a tap makes it Selected",
+        "Never pre-select on the person's behalf"
+      ],
+      "a11y": "role=checkbox, aria-checked"
+    }
+  },
+  "gen/molecule/avatar-stack": {
+    "desc": "purpose: Represent a group of people compactly.\nprops:\n  people: 1-5 avatars\n  count: \"+{n}\" when more than 5\na11y: Wrap in a labelled group: \"{team}: {n} people\"",
+    "spec": {
+      "id": "gen/molecule/avatar-stack",
+      "level": "molecule",
+      "purpose": "Represent a group of people compactly.",
+      "props": {
+        "people": "1-5 avatars",
+        "count": "\"+{n}\" when more than 5"
+      },
+      "a11y": "Wrap in a labelled group: \"{team}: {n} people\""
+    }
+  },
+  "gen/molecule/task": {
+    "desc": "purpose: A person-authored task.\nprops:\n  state: Open | Done\n  task: string\na11y: role=checkbox",
+    "spec": {
+      "id": "gen/molecule/task",
+      "level": "molecule",
+      "purpose": "A person-authored task.",
+      "props": {
+        "state": "Open | Done",
+        "task": "string"
+      },
+      "a11y": "role=checkbox"
+    }
+  },
+  "gen/insight/narrative": {
+    "desc": "purpose: Generated headline summarising everything in scope.\nuse_when: First block of every generated screen.\nprops:\n  kicker: string \"{scope}, updated {relative time}\"\n  headline: string 60-140 chars, 1-2 sentences, second person for the owner, third person for viewers\n  confidence: High | Medium | Low\n  suggestions: 0-3 gen/molecule/suggestion\nrules:\n  - Lead with the finding, then the evidence\n  - Include one concrete number when available\n  - If confidence is Low, hedge: \"Early signs suggest...\"\n  - Never invent names or numbers not present in sources",
+    "spec": {
+      "id": "gen/insight/narrative",
+      "level": "organism",
+      "purpose": "Generated headline summarising everything in scope.",
+      "use": "First block of every generated screen.",
+      "props": {
+        "kicker": "string \"{scope}, updated {relative time}\"",
+        "headline": "string 60-140 chars, 1-2 sentences, second person for the owner, third person for viewers",
+        "confidence": "High | Medium | Low",
+        "suggestions": "0-3 gen/molecule/suggestion"
+      },
+      "rules": [
+        "Lead with the finding, then the evidence",
+        "Include one concrete number when available",
+        "If confidence is Low, hedge: \"Early signs suggest...\"",
+        "Never invent names or numbers not present in sources"
+      ]
+    }
+  },
+  "gen/insight/trend": {
+    "desc": "purpose: Explain a change in one metric over time.\nuse_when: A metric moved more than 5% period over period, or has 3+ periods in one direction.\nprops:\n  title: string max 70, states the direction\n  metric: gen/molecule/metric XL\n  body: string max 200, names the cause if sources support it\n  confidence: High | Medium | Low\nslots: chip, title, metric, body, footer",
+    "spec": {
+      "id": "gen/insight/trend",
+      "level": "organism",
+      "purpose": "Explain a change in one metric over time.",
+      "use": "A metric moved more than 5% period over period, or has 3+ periods in one direction.",
+      "props": {
+        "title": "string max 70, states the direction",
+        "metric": "gen/molecule/metric XL",
+        "body": "string max 200, names the cause if sources support it",
+        "confidence": "High | Medium | Low"
+      },
+      "slots": [
+        "chip",
+        "title",
+        "metric",
+        "body",
+        "footer"
+      ]
+    }
+  },
+  "gen/insight/comparison": {
+    "desc": "purpose: Compare one group against benchmarks.\nuse_when: The subject differs from the benchmark by more than 10%.\nprops:\n  title: string max 70\n  rows: 2-5 gen/molecule/comparison-row, subject first\n  body: string max 160\nrules:\n  - Sort benchmarks by value descending\n  - Use the same unit in every row",
+    "spec": {
+      "id": "gen/insight/comparison",
+      "level": "organism",
+      "purpose": "Compare one group against benchmarks.",
+      "use": "The subject differs from the benchmark by more than 10%.",
+      "props": {
+        "title": "string max 70",
+        "rows": "2-5 gen/molecule/comparison-row, subject first",
+        "body": "string max 160"
+      },
+      "rules": [
+        "Sort benchmarks by value descending",
+        "Use the same unit in every row"
+      ]
+    }
+  },
+  "gen/insight/evidence": {
+    "desc": "purpose: Back a generated claim with verbatim human evidence.\nuse_when: A narrative or insight makes a claim about a person; show the strongest public quote that supports it.\nprops:\n  quote: gen/molecule/quote\n  why: string max 120, generated, explains the pattern across sources\nrules:\n  - Only public feedback\n  - Quote is human (no spark); the \"why\" line is AI (spark)",
+    "spec": {
+      "id": "gen/insight/evidence",
+      "level": "organism",
+      "purpose": "Back a generated claim with verbatim human evidence.",
+      "use": "A narrative or insight makes a claim about a person; show the strongest public quote that supports it.",
+      "props": {
+        "quote": "gen/molecule/quote",
+        "why": "string max 120, generated, explains the pattern across sources"
+      },
+      "rules": [
+        "Only public feedback",
+        "Quote is human (no spark); the \"why\" line is AI (spark)"
+      ]
+    }
+  },
+  "gen/insight/risk": {
+    "desc": "purpose: Flag something that needs attention and say what to do.\nuse_when: A key result is below 60% of expected pace, a metric fell >10%, or a team lost managers.\nprops:\n  severity: Caution | Critical\n  title: string max 70, states the problem\n  body: string max 200, quantifies impact\n  next_steps: 1-3 gen/molecule/next-step\nrules:\n  - Always include at least one next step\n  - Critical only when people or deadlines are affected within 30 days",
+    "spec": {
+      "id": "gen/insight/risk",
+      "level": "organism",
+      "purpose": "Flag something that needs attention and say what to do.",
+      "use": "A key result is below 60% of expected pace, a metric fell >10%, or a team lost managers.",
+      "props": {
+        "severity": "Caution | Critical",
+        "title": "string max 70, states the problem",
+        "body": "string max 200, quantifies impact",
+        "next_steps": "1-3 gen/molecule/next-step"
+      },
+      "rules": [
+        "Always include at least one next step",
+        "Critical only when people or deadlines are affected within 30 days"
+      ]
+    }
+  },
+  "gen/insight/next-steps": {
+    "desc": "purpose: Turn insights into a short list of human-confirmed actions.\nuse_when: At the end of a screen with at least one risk or growth insight.\nprops:\n  title: string, names the moment: \"For your 1:1 with {name} on {day}\"\n  steps: 1-3 gen/molecule/next-step\nrules:\n  - Steps start with a verb\n  - Never auto-execute; the person adds or dismisses",
+    "spec": {
+      "id": "gen/insight/next-steps",
+      "level": "organism",
+      "purpose": "Turn insights into a short list of human-confirmed actions.",
+      "use": "At the end of a screen with at least one risk or growth insight.",
+      "props": {
+        "title": "string, names the moment: \"For your 1:1 with {name} on {day}\"",
+        "steps": "1-3 gen/molecule/next-step"
+      },
+      "rules": [
+        "Steps start with a verb",
+        "Never auto-execute; the person adds or dismisses"
+      ]
+    }
+  },
+  "gen/state/generating": {
+    "desc": "purpose: Hold the place of an insight being generated.\nrules:\n  - Replace each skeleton as text streams in\n  - After 20 s show \"Still working\" with a cancel option\na11y: aria-busy, polite live region announces \"Insight ready\"",
+    "spec": {
+      "id": "gen/state/generating",
+      "level": "organism",
+      "purpose": "Hold the place of an insight being generated.",
+      "rules": [
+        "Replace each skeleton as text streams in",
+        "After 20 s show \"Still working\" with a cancel option"
+      ],
+      "a11y": "aria-busy, polite live region announces \"Insight ready\""
+    }
+  },
+  "gen/state/not-enough-data": {
+    "desc": "purpose: Explain why nothing was generated and how to fix it.\nuse_when: Fewer than 3 entries or 2 feedback notes in scope.\nrules:\n  - State the exact threshold\n  - Offer the one action that unlocks generation",
+    "spec": {
+      "id": "gen/state/not-enough-data",
+      "level": "organism",
+      "purpose": "Explain why nothing was generated and how to fix it.",
+      "use": "Fewer than 3 entries or 2 feedback notes in scope.",
+      "rules": [
+        "State the exact threshold",
+        "Offer the one action that unlocks generation"
+      ]
+    }
+  },
+  "gen/state/locked": {
+    "desc": "purpose: Show that an insight exists without revealing it.\nuse_when: Viewer lacks access to the sources an insight was generated from.\nprops:\n  title: string, the insight title is visible\n  price: credits integer\nrules:\n  - Never generate locked insights from content the viewer could not unlock\n  - Title may be shown; body never",
+    "spec": {
+      "id": "gen/state/locked",
+      "level": "organism",
+      "purpose": "Show that an insight exists without revealing it.",
+      "use": "Viewer lacks access to the sources an insight was generated from.",
+      "props": {
+        "title": "string, the insight title is visible",
+        "price": "credits integer"
+      },
+      "rules": [
+        "Never generate locked insights from content the viewer could not unlock",
+        "Title may be shown; body never"
+      ]
+    }
+  },
+  "gen/frame/app-bar": {
+    "desc": "purpose: Screen header with context and credit balance.\nprops:\n  context: Owner | Viewer | Leader\n  title: string\n  subtitle: string\n  credits: integer, hidden for Leader",
+    "spec": {
+      "id": "gen/frame/app-bar",
+      "level": "organism",
+      "purpose": "Screen header with context and credit balance.",
+      "props": {
+        "context": "Owner | Viewer | Leader",
+        "title": "string",
+        "subtitle": "string",
+        "credits": "integer, hidden for Leader"
+      }
+    }
+  },
+  "gen/frame/composer-dock": {
+    "desc": "purpose: Ask the model a question about the data in scope.\nprops:\n  suggestions: 0-3 gen/molecule/suggestion\n  placeholder: names the scope\nrules:\n  - Pinned 8px above the tab bar\n  - Answers render as new gen/insight/* blocks, not chat bubbles",
+    "spec": {
+      "id": "gen/frame/composer-dock",
+      "level": "organism",
+      "purpose": "Ask the model a question about the data in scope.",
+      "props": {
+        "suggestions": "0-3 gen/molecule/suggestion",
+        "placeholder": "names the scope"
+      },
+      "rules": [
+        "Pinned 8px above the tab bar",
+        "Answers render as new gen/insight/* blocks, not chat bubbles"
+      ]
+    }
+  },
+  "gen/frame/tab-bar": {
+    "desc": "purpose: Primary navigation.\nprops:\n  active: Home | Contribute | People | Company (Company only for leaders)\na11y: role=tablist; active tab aria-selected",
+    "spec": {
+      "id": "gen/frame/tab-bar",
+      "level": "organism",
+      "purpose": "Primary navigation.",
+      "props": {
+        "active": "Home | Contribute | People | Company (Company only for leaders)"
+      },
+      "a11y": "role=tablist; active tab aria-selected"
+    }
+  },
+  "gen/insight/team-summary": {
+    "desc": "purpose: Summarise one team with a generated read and three metrics.\nuse_when: Teams overview: one per team, sorted by the metric the leader asked about (default: biggest change).\nprops:\n  team: string\n  meta: \"{n} people, led by {name}\"\n  read: string max 140, generated, compares to company average\n  metrics: exactly 3 gen/molecule/metric M, each with delta vs company average\nrules:\n  - Teams under 5 people show only aggregates the grammar allows",
+    "spec": {
+      "id": "gen/insight/team-summary",
+      "level": "organism",
+      "purpose": "Summarise one team with a generated read and three metrics.",
+      "use": "Teams overview: one per team, sorted by the metric the leader asked about (default: biggest change).",
+      "props": {
+        "team": "string",
+        "meta": "\"{n} people, led by {name}\"",
+        "read": "string max 140, generated, compares to company average",
+        "metrics": "exactly 3 gen/molecule/metric M, each with delta vs company average"
+      },
+      "rules": [
+        "Teams under 5 people show only aggregates the grammar allows"
+      ]
+    }
+  },
+  "gen/data/task-group": {
+    "desc": "purpose: Show a person-authored goal with its tasks and progress.\nprops:\n  goal: string\n  category: gen/atom/chip Human\n  expected: string\n  tasks: 1-8 gen/molecule/task\n  due: \"{done} of {total}, due {date}\"\nrules:\n  - Human data: never add a spark here\n  - The model may summarise task groups in a narrative, but never edits them",
+    "spec": {
+      "id": "gen/data/task-group",
+      "level": "organism",
+      "purpose": "Show a person-authored goal with its tasks and progress.",
+      "props": {
+        "goal": "string",
+        "category": "gen/atom/chip Human",
+        "expected": "string",
+        "tasks": "1-8 gen/molecule/task",
+        "due": "\"{done} of {total}, due {date}\""
+      },
+      "rules": [
+        "Human data: never add a spark here",
+        "The model may summarise task groups in a narrative, but never edits them"
+      ]
+    }
+  },
+  "gen/insight/chart": {
+    "desc": "purpose: Show data a sentence cannot: several groups or periods at once.\nuse_when: Bars: compare 2-6 groups or periods, max 2 series. Line: a value over 5+ periods; projections only with Medium or High confidence.\nprops:\n  type: Bars | Line\n  title: string max 70\n  series: [{name, values[], role: primary|secondary|projected|reference}]\n  x_labels: string[]\n  y_labels: 3 strings, top to bottom\n  body: string max 160, says what to notice\nrules:\n  - Projected values always use spark/accent dashed and the legend says \"Projected\"\n  - Max 2 measured series; use a comparison insight for more groups\n  - Never a pie or radar chart\na11y: Provide a data table alternative; body states the main takeaway",
+    "spec": {
+      "id": "gen/insight/chart",
+      "level": "organism",
+      "purpose": "Show data a sentence cannot: several groups or periods at once.",
+      "use": "Bars: compare 2-6 groups or periods, max 2 series. Line: a value over 5+ periods; projections only with Medium or High confidence.",
+      "props": {
+        "type": "Bars | Line",
+        "title": "string max 70",
+        "series": "[{name, values[], role: primary|secondary|projected|reference}]",
+        "x_labels": "string[]",
+        "y_labels": "3 strings, top to bottom",
+        "body": "string max 160, says what to notice"
+      },
+      "rules": [
+        "Projected values always use spark/accent dashed and the legend says \"Projected\"",
+        "Max 2 measured series; use a comparison insight for more groups",
+        "Never a pie or radar chart"
+      ],
+      "a11y": "Provide a data table alternative; body states the main takeaway"
+    }
+  },
+  "gen/molecule/nav-item": {
+    "desc": "purpose: One destination in the desktop sidebar.\nprops:\n  state: Active | Default\n  icon: gen/atom/icon/*\n  label: string\na11y: aria-current=\"page\" when Active",
+    "spec": {
+      "id": "gen/molecule/nav-item",
+      "level": "molecule",
+      "purpose": "One destination in the desktop sidebar.",
+      "props": {
+        "state": "Active | Default",
+        "icon": "gen/atom/icon/*",
+        "label": "string"
+      },
+      "a11y": "aria-current=\"page\" when Active"
+    }
+  },
+  "gen/frame/sidebar": {
+    "desc": "purpose: Desktop navigation, account and credit balance. Replaces the tab bar above 1024px.\nprops:\n  active: Home | Contribute | People | Company | Tasks (Company only for leaders)\n  name: string\n  company: string\n  credits: integer\nrules:\n  - Fills the viewport height; content scrolls, the sidebar does not\n  - The model never generates sidebar content",
+    "spec": {
+      "id": "gen/frame/sidebar",
+      "level": "organism",
+      "purpose": "Desktop navigation, account and credit balance. Replaces the tab bar above 1024px.",
+      "props": {
+        "active": "Home | Contribute | People | Company | Tasks (Company only for leaders)",
+        "name": "string",
+        "company": "string",
+        "credits": "integer"
+      },
+      "rules": [
+        "Fills the viewport height; content scrolls, the sidebar does not",
+        "The model never generates sidebar content"
+      ]
+    }
+  },
+  "gen/template/home-owner": {
+    "desc": "purpose: Owner home: narrative, evidence, trend, own data, next steps.\nrules:\n  - Blocks between the app bar and the composer are replaced by generated blocks following the Grammar board\n  - Keep the fixed chrome: app bar, composer dock, tab bar",
+    "spec": {
+      "id": "gen/template/home-owner",
+      "level": "template",
+      "purpose": "Owner home: narrative, evidence, trend, own data, next steps.",
+      "rules": [
+        "Blocks between the app bar and the composer are replaced by generated blocks following the Grammar board",
+        "Keep the fixed chrome: app bar, composer dock, tab bar"
+      ]
+    }
+  },
+  "gen/template/contribute": {
+    "desc": "purpose: Add an entry: text area, AI follow-up, preview of what changes, visibility.\nrules:\n  - Blocks between the app bar and the composer are replaced by generated blocks following the Grammar board\n  - Keep the fixed chrome: app bar, composer dock, tab bar",
+    "spec": {
+      "id": "gen/template/contribute",
+      "level": "template",
+      "purpose": "Add an entry: text area, AI follow-up, preview of what changes, visibility.",
+      "rules": [
+        "Blocks between the app bar and the composer are replaced by generated blocks following the Grammar board",
+        "Keep the fixed chrome: app bar, composer dock, tab bar"
+      ]
+    }
+  },
+  "gen/template/profile-viewer": {
+    "desc": "purpose: Someone else's profile: generated from public data only, private insights locked.\nrules:\n  - Blocks between the app bar and the composer are replaced by generated blocks following the Grammar board\n  - Keep the fixed chrome: app bar, composer dock, tab bar",
+    "spec": {
+      "id": "gen/template/profile-viewer",
+      "level": "template",
+      "purpose": "Someone else's profile: generated from public data only, private insights locked.",
+      "rules": [
+        "Blocks between the app bar and the composer are replaced by generated blocks following the Grammar board",
+        "Keep the fixed chrome: app bar, composer dock, tab bar"
+      ]
+    }
+  },
+  "gen/template/company-overview": {
+    "desc": "purpose: Leader overview: narrative, risks, trend, comparison, key numbers, next steps.\nrules:\n  - Blocks between the app bar and the composer are replaced by generated blocks following the Grammar board\n  - Keep the fixed chrome: app bar, composer dock, tab bar",
+    "spec": {
+      "id": "gen/template/company-overview",
+      "level": "template",
+      "purpose": "Leader overview: narrative, risks, trend, comparison, key numbers, next steps.",
+      "rules": [
+        "Blocks between the app bar and the composer are replaced by generated blocks following the Grammar board",
+        "Keep the fixed chrome: app bar, composer dock, tab bar"
+      ]
+    }
+  }
+}

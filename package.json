@@ -1,0 +1,21 @@
+{
+  "name": "moonshot-genui",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "client": "npm run start -w client",
+    "web": "npm run web -w client",
+    "desktop": "npm run start -w desktop",
+    "sync-core": "sh scripts/sync-core.sh",
+    "check:function": "sh scripts/sync-core.sh && deno check supabase/functions/generate-screen/index.ts",
+    "test": "npm test -w @moonshot/genui-core",
+    "deploy:function": "sh scripts/sync-core.sh && npx supabase functions deploy generate-screen --project-ref okiljlztobcnqxtmvzfi",
+    "typecheck": "npm run typecheck -w @moonshot/genui-core && npm run typecheck -w client"
+  },
+  "devDependencies": {
+    "deno": "^2.9.6"
+  }
+}
